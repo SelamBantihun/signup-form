@@ -1,1 +1,88 @@
  
+@font-face {
+  font-family: "Norse";
+  src: url("assets/fonts/Norse-Bold.otf");
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  flex: 1;
+  background: url("assets/bg.jpg") center / cover no-repeat;
+  position: relative;
+}
+
+.logo-banner {
+  margin-top: 20vh;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+.logo-banner h1 {
+  font-family: "Norse";
+  font-size: 4rem;
+}
+
+.logo-banner img {
+  height: 80px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+}
+.content {
+  flex: 2;
+  background: #f9fafb;
+  padding: 40px;
+}
+
+fieldset {
+  border: none;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  padding: 6px;
+  border-radius: 4px;
+}
